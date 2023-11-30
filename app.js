@@ -1,10 +1,11 @@
-const calculator = {
-  plus: function (a, b) {
-    console.log(a + b);
-  },
-  powerOf: function (a, b) {
-    console.log(a ** b);
-  },
-};
-calculator.plus(1, 2);
-calculator.powerOf(2, 3);
+const age = parseInt(prompt("How old are you?"));
+
+if (isNaN(age) || age < 0) {
+  console.log("please write a real positive number");
+} else if (age < 18) {
+  console.log("You are too young");
+} else if (age >= 18 && age < 50) {
+  console.log("You can drink");
+} else if (age > 50) {
+  console.log("you can do anything");
+}
